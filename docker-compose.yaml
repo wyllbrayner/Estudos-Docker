@@ -1,0 +1,12 @@
+services:
+  linux_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: linux_dev:4.2.0
+    container_name: meu_container
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - "${PWD}/test_dir_local:/home"
