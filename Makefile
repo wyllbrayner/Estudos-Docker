@@ -16,8 +16,13 @@ fclean: clean
 	rm -rf test_dir_local
 
 list:
+	@echo "=====================Listar os containers====================="
 	@docker container ls -a
+	@echo "\n=====================Listar as imagens====================="
 	@docker image ls
+	@echo "\n=====================Listar os volumes====================="
 	@docker volume ls
+	@echo "\n=====================Listar as redes====================="
 	@docker network ls
-	ls -la
+	@echo "\n=====================Listar o diretório atual====================="
+	@ls -la
