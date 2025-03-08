@@ -1,3 +1,5 @@
+TRACOS = "====================="
+
 all: up
 
 up:
@@ -16,13 +18,13 @@ fclean: clean
 	rm -rf test_dir_local
 
 list:
-	@echo "=====================Listar os containers====================="
+	@echo ${TRACOS}"Listar os containers"${TRACOS}
 	@docker container ls -a
-	@echo "\n=====================Listar as imagens====================="
+	@echo "\n${TRACOS}Listar as imagens"${TRACOS}
 	@docker image ls
-	@echo "\n=====================Listar os volumes====================="
+	@echo "\n${TRACOS}Listar os volumes"${TRACOS}
 	@docker volume ls
-	@echo "\n=====================Listar as redes====================="
+	@echo "\n${TRACOS}Listar as redes"${TRACOS}
 	@docker network ls
-	@echo "\n=====================Listar o diretório atual====================="
+	@echo "\n${TRACOS}Listar o diretório atual"${TRACOS}
 	@ls -la
