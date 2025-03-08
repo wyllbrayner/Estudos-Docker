@@ -30,19 +30,14 @@ fclean: clean
 
 list:
 	@echo "$(GREEN)=====================Listar os containers==========================$(RESET)"
-	@echo "$(GRAY)"
 	@docker container ls -a
 	@echo "$(GREEN)=====================Listar as imagens============================$(RESET)"
-	@echo "$(GRAY)"
 	@docker image ls
 	@echo "$(GREEN)=====================Listar os volumes============================$(RESET)"
-	@echo "$(GRAY)"
 	@docker volume ls
 	@echo "$(GREEN)=====================Listar as redes==============================$(RESET)"
-	@echo "$(GRAY)"
 	@docker network ls
 	@echo "$(GREEN)=====================Listar o diretório atual=====================$(RESET)"
-	@echo "$(GRAY)"
 	@ls -la
 	@echo "$(RESET)"
 
