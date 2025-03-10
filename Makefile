@@ -26,8 +26,8 @@ clean: down
 fclean: clean
 	@docker image rm ${FULL_IMAGE_NAME}
 	@echo "${GREEN}Comando 'docker image rm ${FULL_IMAGE_NAME}' ${SUCESS}${RESET}"
-	@rm -rf ${LOCAL_FOLDER}
-	@echo "${GREEN}Comando 'rm -rf ${LOCAL_FOLDER}' ${SUCESS}${RESET}"
+#	@rm -rf ${LOCAL_FOLDER}
+#	@echo "${GREEN}Comando 'rm -rf ${LOCAL_FOLDER}' ${SUCESS}${RESET}"
 
 re: fclean up
 
