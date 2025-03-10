@@ -3,10 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: linux_dev:4.2.0
-    container_name: meu_container
+    image: ${FULL_IMAGE_NAME}
+    container_name: ${CONTAINER_NAME}
     restart: always
     stdin_open: true
     tty: true
     volumes:
-      - "${PWD}/test_dir_local:/home"
+      - "${PWD}/${LOCAL_FOLDER}:/home"
