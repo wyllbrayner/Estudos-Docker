@@ -32,15 +32,15 @@ fclean: clean
 re: fclean up
 
 list:
-	@echo "${GREEN}=====================Listar as imagens============================${RESET}"
+	@echo "${GREEN}=====================Listar as imagens=============================${RESET}"
 	@docker image ls
 	@echo "${GREEN}=====================Listar os containers==========================${RESET}"
 	@docker container ls -a
-	@echo "${GREEN}=====================Listar os volumes============================${RESET}"
+	@echo "${GREEN}=====================Listar os volumes=============================${RESET}"
 	@docker volume ls
-	@echo "${GREEN}=====================Listar as redes==============================${RESET}"
+	@echo "${GREEN}=====================Listar as redes===============================${RESET}"
 	@docker network ls
-	@echo "${GREEN}=====================Listar o diretório atual=====================${RESET}"
+	@echo "${GREEN}=====================Listar o diretório atual======================${RESET}"
 	@ls -la
 	@echo "${RESET}"
 
